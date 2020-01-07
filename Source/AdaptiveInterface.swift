@@ -90,7 +90,6 @@ public extension AdaptiveInterface {
         let adaptiveBehavior = AdaptiveBehavior(traitCollection: traitCollection, behavior: behavior, counterBehavior: counterBehavior)
 
         adaptiveElements.append(adaptiveBehavior)
-        update(for: self.traitCollection)
     }
 
     /**
@@ -135,7 +134,6 @@ public extension AdaptiveInterface {
         let container = AdaptiveConstraintContainer(traitCollection: traitCollection, constraints: constraints)
 
         adaptiveElements.append(container)
-        update(for: self.traitCollection)
     }
 
     /**
@@ -190,8 +188,6 @@ public extension AdaptiveInterface {
             let constraintContainer = AdaptiveConstraintContainer(traitCollection: traitCollection, constraints: constructedConstraints)
             adaptiveElements.append(constraintContainer)
         }
-        
-        update(for: self.traitCollection)
     }
 
     /**
